@@ -9,7 +9,7 @@
   "executionRoleArn": "arn:aws:iam::973613034721:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-      "image": "973613034721.dkr.ecr.us-east-1.amazonaws.com/hello-world-spring-boot:latest",
+      "image": "973613034721.dkr.ecr.us-east-1.amazonaws.com/hello-world-spring-boot:v_2",
       "name": "hello-world-spring-boot",
       "essential": true,
       "portMappings": [
