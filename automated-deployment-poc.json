@@ -1,0 +1,23 @@
+{
+  "family": "automated-deployment-poc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "1 vCPU",
+  "memory": "2GB",
+  "executionRoleArn": "arn:aws:iam::973613034721:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "image": "973613034721.dkr.ecr.us-east-1.amazonaws.com/hello-world-spring-boot:latest",
+      "name": "hello-world-spring-boot",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ]
+    }
+  ]
+}
